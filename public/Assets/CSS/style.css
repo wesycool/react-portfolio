@@ -108,7 +108,7 @@ body {
     text-align: center;
     color:grey;
     font-size: 1.5vh;
-    height: 5vh;
+    height: 3.5vh;
     padding-top: 1vh;
 }
 
@@ -133,6 +133,7 @@ body {
     }
 
     .footer {
+        height: 50px;
         background: rgba(255, 255, 255, 1) !important;
     }
     

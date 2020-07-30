@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import Project from "./Project";
+import projects from "../projects.json"
 
 
 function Portfolio(props) {
-    const [ projectList, setList ] = useState( ["test"] )
+    const [ projectList, setList ] = useState( projects )
+    console.log('projectList',projectList)
 
     return(
         <div>
@@ -15,8 +17,9 @@ function Portfolio(props) {
                         </div>
                     </div>
 
-                    {Object.entries(projectList).map(([key,project]) => <Project key={key} project={project}/>)}                    
-
+                    <div className="row row-scroll">
+                        {Object.entries(projectList).map(([key,project]) => <Project key={key} project={project}/>)}                    
+                    </div>
                 </div>
             </main>
             

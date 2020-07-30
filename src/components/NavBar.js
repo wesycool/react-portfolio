@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link , useLocation} from "react-router-dom";
 
 function NavBar(props) {
+    const {pathname} = useLocation();
 
     return(
         <div className="navbar navbar-expand-sm navbar-light bg-light">
@@ -16,10 +17,10 @@ function NavBar(props) {
 
             <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup"  style={{float: "right"}}>
                 <div className="navbar-nav">
-                    <Link className="nav-item nav-link active" to="./">About <span className="sr-only">(current)</span></Link>
-                    <Link className="nav-item nav-link" to="./portfolio">Porfolio</Link>
-                    <Link className="nav-item nav-link" to="./Assets/PDF/Edmund Wong, Cert. APM - Business Consultant.pdf" target="blank">Resume</Link>
-                    <Link className="nav-item nav-link" to="./contact">Contact</Link>
+                    <Link className={(pathname === "/")? "nav-item nav-link active": "nav-item nav-link"} to="./">About <span className="sr-only">(current)</span></Link>
+                    <Link className={(pathname === "/portfolio")? "nav-item nav-link active": "nav-item nav-link"}  to="./portfolio">Porfolio</Link>
+                    <Link className="nav-item nav-link"  to="./Assets/PDF/Edmund Wong, Cert. APM - Business Consultant.pdf" target="blank">Resume</Link>
+                    <Link className={(pathname === "/contact")? "nav-item nav-link active": "nav-item nav-link"} to="./contact">Contact</Link>
                 </div>
             </div>
 

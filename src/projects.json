@@ -1,0 +1,55 @@
+[
+    {
+        "name":"Casino App",
+        "screenshot":"casinoapp.png",
+        "github":"https://github.com/wesycool/Mobile-CasinoApp",
+        "link": " "
+    },
+    {
+        "name":"Dice-Pizzaria",
+        "screenshot":"dice-pizzaria.png",
+        "github":"https://github.com/wesycool/Dice-Pizzaria/",
+        "link":"http://creepers-dice-pizzaria.herokuapp.com/"
+    },
+    {
+        "name":"nutShell",
+        "screenshot":"nutShell.png",
+        "github":"https://github.com/wesycool/nutShell",
+        "link":"https://wesycool.github.io/nutShell/"
+    },
+    {
+        "name":"Employee Directory",
+        "screenshot":"employee-directory.png",
+        "github":"https://github.com/wesycool/19-Employee-Directory",
+        "link":"https://wesycool-employee-directory.herokuapp.com/"
+    },
+    {
+        "name":"Budget Trackers",
+        "screenshot":"budget-trackers.png",
+        "github":"https://github.com/wesycool/18-Budget-Trackers",
+        "link":"https://wesycool-budget-trackers.herokuapp.com/"
+    },
+    {
+        "name":"Eat-Da-Burger",
+        "screenshot":"eat-da-burger.png",
+        "github":"https://github.com/wesycool/13-Node-Express-Handlebars",
+        "link":"https://wesycool-eat-da-burger.herokuapp.com/"
+    },
+    {
+        "name":"Employee Summary",
+        "screenshot":"employee-summary.png",
+        "github":"https://github.com/wesycool/10-Template-Engine-Employee-Summary"
+    },
+    {
+        "name":"Weather Dashboard",
+        "screenshot":"weather.png",
+        "github":"https://github.com/wesycool/6-Weather-Dashboard",
+        "link":"https://wesycool.github.io/6-Weather-Dashboard/"
+    },
+    {
+        "name":"Rock Paper Scissors",
+        "screenshot":"rock-paper-scissors.png",
+        "github":"https://github.com/wesycool/rock-paper-scissors",
+        "link":"https://wesycool.github.io/rock-paper-scissors/"
+    }
+]
