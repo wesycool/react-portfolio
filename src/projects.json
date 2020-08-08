@@ -6,6 +6,12 @@
         "link": " "
     },
     {
+        "name":"Bookify",
+        "screenshot":"bookify.png",
+        "github":"https://github.com/wesycool/Bookify",
+        "link":"https://spartans-bookify.herokuapp.com/"
+    },
+    {
         "name":"Dice-Pizzaria",
         "screenshot":"dice-pizzaria.png",
         "github":"https://github.com/wesycool/Dice-Pizzaria/",
