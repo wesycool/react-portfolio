@@ -52,7 +52,7 @@ function Contact(props) {
                                 <label for="message">Message</label>
                                 <textarea className="form-control form-font" ref={message} rows="3"></textarea>
                                 </div>
-                                <input type="submit" id="submitmessage" onClick={sendMessage} className="btn btn-primary form-font contact-button"/>
+                                <input type="submit" onClick={sendMessage} className="btn btn-primary form-font contact-button"/>
                             </form>
 
                         </div>
