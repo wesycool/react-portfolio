@@ -9,6 +9,10 @@ function Contact(props) {
     const email = useRef()
     const message = useRef()
 
+    console.log(process.env.SERVICEID)
+    console.log(process.env.TEMPLATEID)
+    console.log(process.env.USERID)
+
     function sendMessage(){
 
         const template_params = {
@@ -18,7 +22,12 @@ function Contact(props) {
             "message_html": message.current.value
          }
 
-         emailjs.send(process.env.SERVICEID, process.env.TEMPLATEID, template_params);
+         emailjs.send("default_service", "template_mp8gIrQa", template_params, "user_Lb7RlXKq0CTUC0zKpSJZc");
+
+         firstName.current.value = ''
+         lastName.current.value = ''
+         email.current.value = ''
+         message.current.value = ''
     }
 
     return(
@@ -52,7 +61,7 @@ function Contact(props) {
                                 <label for="message">Message</label>
                                 <textarea className="form-control form-font" ref={message} rows="3"></textarea>
                                 </div>
-                                <input type="submit" onClick={sendMessage} className="btn btn-primary form-font contact-button"/>
+                                <input type="button" onClick={sendMessage} value="submit" className="btn btn-primary form-font contact-button"/>
                             </form>
 
                         </div>
