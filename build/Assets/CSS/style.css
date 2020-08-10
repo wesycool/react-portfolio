@@ -1,0 +1,201 @@
+/* Custom font */
+body {
+    font-family: 'Indie Flower', sans-serif !important;
+}
+
+.navbar-brand {
+    font-family: 'Rock Salt', sans-serif !important;
+}
+
+
+/* Custom backgroun image */
+.bg-img {
+    background-image: url(../Images/mainbackground.jpg) !important;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main-row, .bg-img{
+    height: calc(100vh - 3.8125rem);
+}
+
+.main-opacity {
+    background: rgba(255, 255, 255, 0.7);
+    height: 100%;
+    
+}
+
+.row-scroll{
+    overflow: scroll; 
+    height: calc(100vh - 11.4375rem);;
+}
+
+/* Card for index.html & contact.html */
+.col-opacity {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.card-opacity {
+    border: 0px !important;
+    margin-top:15px !important;
+    background-color: transparent !important;
+}
+
+.card-padding {
+    padding: 20px;
+}
+
+
+/* Card design for portfolio.html */
+.col-padding {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.card-design {
+    padding:10px;
+    background-color:#383636 !important;
+}
+
+.card-text-design {
+    text-align:center; 
+    color:white; 
+    padding-top: 5px;   
+}
+
+.card-img-design {
+    filter: drop-shadow(2px 2px 2px black);    
+}
+
+
+/* LinkedIn GitHub Logo*/
+.linkedin{
+    width: 100px;
+    height: 30px;
+    background: url(../Images/linkedIn.png) no-repeat center/contain !important;
+    padding: 3px;
+    opacity:0.7;
+    display: inline-block;
+}
+
+.github{
+    padding: 3px;
+    opacity:0.7;
+    display: inline-block;
+}
+.github-mark{
+    width: 50px;
+    height: 30px;
+    background: url(../Images/GitHub-Mark.png) no-repeat right/contain !important;
+    display: inline-block;
+}
+.github-logo{
+    width: 100px;
+    height: 30px;
+    background: url(../Images/GitHub_Logo.png) no-repeat left/contain !important;
+    display: inline-block;
+}
+
+.linkedin:hover, .github:hover {
+    opacity:1;
+}
+
+
+
+/* Footer for index.html & contact.html */
+.footer {
+    text-align: center;
+    color:grey;
+    font-size: 1.5vh;
+    height: 3.5vh;
+    padding-top: 1vh;
+}
+
+
+
+/* For mobile phone portrait */
+@media screen and (max-width: 567px) {
+    body{
+        font-size: 2vh !important;
+    }
+    
+    h1 {
+        font-size: 5vh !important;
+    }
+
+    .col-opacity {
+        background-color: transparent;
+    }
+
+    .card-opacity {
+        background: rgba(255, 255, 255, 0.7) !important;
+    }
+
+    .footer {
+        height: 50px;
+        background: rgba(255, 255, 255, 1) !important;
+    }
+    
+}
+
+
+/* For iPhone 5/SE */
+@media screen and (width: 568px) {
+    .card-padding { 
+        padding: 0px;
+        padding-right: 100px;
+        padding-left:100px;
+    }
+}
+
+
+/* For mobile phone lanscape */
+@media screen and (orientation: landscape) and (max-width: 823px){
+    h1 {
+        font-size: 7vh !important;
+        margin-bottom: 0px;
+    }
+    
+    label, .form-font {
+        font-size: 2vh !important;
+        margin-bottom: 1vh !important;
+    }
+
+    .card-text {
+        font-size: 3.5vh !important;
+    }
+
+    .form-group {
+        margin-bottom: 0px !important;
+    }
+
+    .contact-button {
+        margin-top: 10px !important;
+    }
+
+    .bg-img{
+        height: 100%;
+    }
+
+}
+
+
+/* For iPad & iPad Pro */
+@media screen and (min-height: 1024px){
+    .footer {
+        font-size: 12px;
+    }
+
+    .card-opacity {
+        margin-top: 6vh !important;
+    }
+}
+
+
+/* For mobile phone & iPad portraits */
+@media screen and (orientation: portrait) and (max-height: 1024px){
+    .bg-img{
+        height: 100%;
+    }
+}

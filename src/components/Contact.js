@@ -1,6 +1,6 @@
-require('dotenv').config()
 import React, {useRef} from "react";
 import emailjs from 'emailjs-com';
+require('dotenv').config()
 
 function Contact(props) {
 
