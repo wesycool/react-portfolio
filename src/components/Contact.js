@@ -1,7 +1,25 @@
-import React from "react";
-
+require('dotenv').config()
+import React, {useRef} from "react";
+import emailjs from 'emailjs-com';
 
 function Contact(props) {
+
+    const firstName = useRef()
+    const lastName = useRef()
+    const email = useRef()
+    const message = useRef()
+
+    function sendMessage(){
+
+        const template_params = {
+            "reply_to": email.current.value,
+            "from_name": `${firstName.current.value} ${lastName.current.value}`,
+            "to_name": "Edmund",
+            "message_html": message.current.value
+         }
+
+         emailjs.send(process.env.SERVICEID, process.env.TEMPLATEID, template_params);
+    }
 
     return(
         <div>
@@ -17,24 +35,24 @@ function Contact(props) {
                                     <label for="name">Name</label>
                                     <div className="form-row">
                                         <div className="col">
-                                        <input type="text" className="form-control form-font" id="firstname" placeholder="First name"/>
+                                        <input type="text" className="form-control form-font" ref={firstName} placeholder="First name"/>
                                         </div>
                                         <div className="col">
-                                        <input type="text" className="form-control form-font" id="lastname" placeholder="Last name"/>
+                                        <input type="text" className="form-control form-font" ref={lastName} placeholder="Last name"/>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" className="form-control form-font" id="email" placeholder="name@example.com"/>
+                                <input type="email" className="form-control form-font" ref={email} placeholder="name@example.com"/>
                                 </div>
 
                                 <div className="form-group">
                                 <label for="message">Message</label>
-                                <textarea className="form-control form-font" id="message" rows="3"></textarea>
+                                <textarea className="form-control form-font" ref={message} rows="3"></textarea>
                                 </div>
-                                <input type="submit" id="submitmessage" className="btn btn-primary form-font contact-button"/>
+                                <input type="submit" id="submitmessage" onClick={sendMessage} className="btn btn-primary form-font contact-button"/>
                             </form>
 
                         </div>
