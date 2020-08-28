@@ -24,6 +24,12 @@
         "link":"https://wesycool.github.io/nutShell/"
     },
     {
+        "name":"Google Books",
+        "screenshot":"google-books.png",
+        "github":"https://github.com/wesycool/21-Google-Books-Search",
+        "link":"https://wesycool-google-books.herokuapp.com/"
+    },
+    {
         "name":"Employee Directory",
         "screenshot":"employee-directory.png",
         "github":"https://github.com/wesycool/19-Employee-Directory",
