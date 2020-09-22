@@ -19,7 +19,7 @@ function NavBar(props) {
                 <div className="navbar-nav">
                     <Link className={(pathname === "/")? "nav-item nav-link active": "nav-item nav-link"} to="./">About <span className="sr-only">(current)</span></Link>
                     <Link className={(pathname === "/portfolio")? "nav-item nav-link active": "nav-item nav-link"}  to="./portfolio">Porfolio</Link>
-                    <Link className="nav-item nav-link"  to="./Assets/PDF/Edmund Wong, Cert. APM - Business Consultant.pdf" target="blank">Resume</Link>
+                    <Link className="nav-item nav-link"  to="./Assets/PDF/Edmund Wong, Cert. APM.pdf" target="blank">Resume</Link>
                     <Link className={(pathname === "/contact")? "nav-item nav-link active": "nav-item nav-link"} to="./contact">Contact</Link>
                 </div>
             </div>
